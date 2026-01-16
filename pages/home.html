@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="top"></div>
+
+    <header class="header">
+      <a href="#top" class="header_name">Philippe Dias</a>
+
+      <input type="checkbox"  id="hamburguer" class="menu_toggle-input"></input>
+      <label for="hamburguer" class="menu_toggle-label"><ion-icon name="menu-outline"></ion-icon></label>
+    </header>
+
+    <nav id="header_menu" class="header_menu--mobile">
+      <ul id="menu_list" class="menu_list--mobile">
+        <li class="menu_list-item"><a href="#inicio">Início</a></li>
+        <li class="menu_list-item"><a href="#projetos">Portfólio</a></li>
+        <li class="menu_list-item"><a href="#sobre-mim">Sobre Mim</a></li>
+        <li class="menu_list-item"><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <section id="inicio" class="hero">
+      <article class="hero_content">
+        <div class="hero_content-left">
+          <h1 class="section_title hero_name">
+            Olá, Eu sou <br />Philippe Dias.
+          </h1>
+          <p class="description">
+            Técnico em Desenvolvimento de sistemas, com conhecimento em Front-End e Back-End. Atualmente, na faculdade, estou 
+            cursando Análise e Desenvolvimento de Sistemas.
+          </p>
+          <div class="contact_links">
+            <span class="" >Me contate <ion-icon class="arrow_icon" name="arrow-forward-outline"></ion-icon></span>
+            <a
+              href="https://www.linkedin.com/in/philippe-lisboa"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon"
+              ><ion-icon name="logo-linkedin"></ion-icon></a>
+              <a
+                href="https://github.com/PhilippeDi4s"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="icon"
+                ><ion-icon name="logo-github"></ion-icon></a>
+          </div>
+        </div>
+        <img src="../imgs/profile/profile.png" alt="" class="profile_picture" />
+      </article>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="portfolio" class="projects">
+      <h1 class="section_title">Projetos Desenvolvidos</h1>
+      <div class="portfolio_switcher" hidden>
+        <button class="hidden">Portfólio <img src="../imgs/icons/code_icon.svg"></button>
+        <button class="hidden">Certificados <img src="../imgs/icons/medal_icon.svg"></button>
+        <button class="hidden">Stack Tecnológica <img src="../imgs/icons/book_icon.svg"></button>
+      </div>
+
+      <div class="projects_grid">
+        <article class="portfolio_card">
+          <img src="../imgs/projects/dashboard.png" alt="Imagem do projeto">
+          <h2 class="project_title">Título do Projeto</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, blanditiis excepturi magni quos dicta ipsam voluptate porro nobis laborum aliquam.</p>
+          <div class="flex_container">
+            <a href="#" class="emphasis">Live demo <ion-icon class="arrow_icon" name="arrow-forward-outline"></ion-icon></a>
+            <a href="./preoject_cart.html" class="btn--transparent">Detalhes <ion-icon class="arrow_icon" name="arrow-forward-outline"></ion-icon></a>
+          </div>
+        </article>
+        <article class="portfolio_card">
+          <img src="../imgs/projects/dashboard.png" alt="Imagem do projeto">
+          <h2 class="project_title">Título do Projeto</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, blanditiis excepturi magni quos dicta ipsam voluptate porro nobis laborum aliquam.</p>
+          <div class="flex_container">
+            <a href="#" class="emphasis">Live demo <ion-icon class="arrow_icon" name="arrow-forward-outline"></ion-icon></a>
+            <a href="#" class="btn--transparent">Detalhes <ion-icon class="arrow_icon" name="arrow-forward-outline"></ion-icon></a>
+          </div>
+        </article>
+        <article class="portfolio_card">
+          <img src="../imgs/projects/dashboard.png" alt="Imagem do projeto">
+          <h2 class="project_title">Título do Projeto</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, blanditiis excepturi magni quos dicta ipsam voluptate porro nobis laborum aliquam.</p>
+          <div class="flex_container">
+            <a href="#" class="emphasis">Live demo <ion-icon class="arrow_icon" name="arrow-forward-outline"></ion-icon></a>
+            <a href="#" class="btn--transparent">Detalhes <ion-icon class="arrow_icon" name="arrow-forward-outline"></ion-icon></a>
+          </div>
+        </article>
+        <article class="portfolio_card">
+          <img src="../imgs/projects/dashboard.png" alt="Imagem do projeto">
+          <h2 class="project_title">Título do Projeto</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, blanditiis excepturi magni quos dicta ipsam voluptate porro nobis laborum aliquam.</p>
+          <div class="flex_container">
+            <a href="#" class="emphasis">Live demo <ion-icon class="arrow_icon" name="arrow-forward-outline"></ion-icon></a>
+            <a href="#" class="btn--transparent">Detalhes <ion-icon class="arrow_icon" name="arrow-forward-outline"></ion-icon></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="certificates">
+      <h1 class="section_title">Certificados</h1>
+      <div class="projects_grid">
+        <article class="portfolio_card certificate--hover">
+          <img src="../imgs/certificates/certificado-1.png" alt="Certificado de Análise de dados com Python">
+        </article>
+        <article class="portfolio_card certificate--hover">
+          <img src="../imgs/certificates/certificado-2.png" alt="Certificado de curso web frontend html css js">
+        </article>
+      </div>
+    </section>
+
+    <section class="stack">
+      <h1 class="section_title">Stack Tecnológica</h1>
+      <div class="stack_grid">
+        <article class="stack_card stack--hover">
+          <img src="../imgs/icons/html_icon.svg" alt="Ícone HTML">
+          <p><span class="uppercase">html</span></p>
+        </article>
+        <article class="stack_card stack--hover">
+          <img src="../imgs/icons/css_icon.svg" alt="Ícone css">
+          <p><span class="uppercase">css</span></p>
+        </article>
+        <article class="stack_card stack--hover">
+          <img src="../imgs/icons/js_icon.svg" alt="Ícone js">
+          <p>JavaScript</span></p>
+        </article>
+        <article class="stack_card stack--hover">
+          <img src="../imgs/icons/bootstrap_icon.svg" alt="Ícone bootstrap">
+          <p>Bootstrap</span></p>
+        </article>
+        <article class="stack_card stack--hover">
+          <img id="small_img" src="../imgs/icons/php_icon.svg" alt="Ícone php">
+          <p><span class="uppercase">php</span></p>
+        </article>
+        <article class="stack_card stack--hover">
+          <img src="../imgs/icons/python_icon.svg" alt="Ícone python">
+          <p>Python</p>
+        </article>
+        <article class="stack_card stack--hover">
+          <img id="small_img" src="../imgs/icons/sql_icon.svg" alt="Ícone mysql">
+          <p>MySQL</p>
+        </article>
+        <article class="stack_card stack--hover">
+          <img src="../imgs/icons/github_icon.svg" alt="Ícone github">
+          <p>GitHub</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="sobre-mim" class="about-me">
+      <h1 class="section_title">Sobre mim</h1>
+      <div class="about-me_content">
+        <h2 class="about-me_subtitle show_lg">Desenvolvedor Front-End e Back-End com técnico em Desenvolvimento de Sistemas</h2>
+        <p class="show_sm">
+          <strong>Sou estudante de Análise e Desenvolvimento de Sistemas e Técnico em Desenvolvimento de Sistemas, com foco em desenvolvimento web front-end e back-end.</strong> 
+          Tenho experiência com <strong>HTML, CSS, JavaScript, PHP, Python, MySQL e GitHub</strong>, atuando na criação de soluções funcionais, bem estruturadas e centradas na 
+          experiência do usuário. Busco uma oportunidade no mercado desenvolvimento web para contribuir com projetos reais e evoluir profissionalmente.
+        </p>
+        <p class="show_lg">
+          <strong>Sou estudante de Análise e Desenvolvimento de Sistemas e Técnico em Desenvolvimento de Sistemas pela ETEC , com foco em desenvolvimento web front-end e 
+          back-end. Tenho experiência prática com HTML, CSS, JavaScript, PHP, Python e MySQL</strong>, atuando desde a modelagem de bancos de dados até a integração completa 
+          com interfaces funcionais e bem estruturadas. Participei do desenvolvimento de soluções para clientes reais, realizando levantamento de requisitos, 
+          versionamento com GitHub e aplicação de boas práticas de desenvolvimento. Busco uma oportunidade no mercado de desenvolvimento web onde eu possa 
+          contribuir com projetos reais, evoluir tecnicamente e gerar impacto por meio de soluções eficientes e centradas no usuário.
+        </p>
+        <div class="flex_container">
+          <a href="#" class="emphasis">Mais sobre mim</a>
+          <a href="#" class="emphasis">Meu currículo</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="contato" class="contact">
+      <div class="contact_content-left">
+        <h1 class="section_title">Vamos nos conectar!</h1>
+        <p>Diga olá para <span class="underline">lisboa.philippes@gmail.com</span> <br> Para mais informações, aqui está meu <a class="underline" href="#">currículo</a></p>
+        <div class="flex_container">
+          <a
+            href="https://www.linkedin.com/in/philippe-lisboa"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="icon"
+            ><ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a
+            href="https://github.com/PhilippeDi4s"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="icon"
+            ><ion-icon name="logo-github"></ion-icon>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact_form" action="">
+        <h2>Entre em contato</h2>
+
+        <div class="input_group">
+          <label for="contact_name">Nome</label>
+          <div class="input_wrapper">
+            <img src="../imgs/icons/user_icon.svg" alt="" class="icon">
+            <input type="text" id="contact_name" placeholder="Seu Nome">
+          </div>
+        </div>
+        
+        <div class="input_group">
+          <label for="contact_email">Email</label>
+          <div class="input_wrapper">
+            <img src="../imgs/icons/email_icon.svg" alt="" class="icon">
+            <input type="email" id="contact_email" placeholder="Seu E-mail">
+          </div>
+        </div>
+
+        <div class="input_group">
+          <label for="contact_message">Mensagem</label>
+          <div class="input_wrapper">
+            <img src="../imgs/icons/message_icon.svg" alt="" class="icon">
+            <textarea id="contact_message" placeholder="Sua Mensagem"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn_gradient"><img src="../imgs/icons/send_icon.svg" alt="" class="icon"> Enviar mensagem</button>
+      </form>
+    </section>
+    <footer class="footer">
+        <p>© 2026 Philippe Dias. Todos os direitos reservados.</p>
+
+    </footer>
+    <script src="../script/script.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
