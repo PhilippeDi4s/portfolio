@@ -214,14 +214,14 @@
         </div>
       </div>
 
-      <form class="contact_form" action="">
+      <form id="contact_form" class="contact_form" action="">
         <h2>Entre em contato</h2>
 
         <div class="input_group">
           <label for="contact_name">Nome</label>
           <div class="input_wrapper">
             <img src="../imgs/icons/user_icon.svg" alt="" class="icon">
-            <input type="text" id="contact_name" placeholder="Seu Nome">
+            <input type="text" id="contact_name" placeholder="Seu Nome" name="user_name" required>
           </div>
         </div>
         
@@ -229,15 +229,22 @@
           <label for="contact_email">Email</label>
           <div class="input_wrapper">
             <img src="../imgs/icons/email_icon.svg" alt="" class="icon">
-            <input type="email" id="contact_email" placeholder="Seu E-mail">
+            <input type="email" id="contact_email" placeholder="Seu E-mail" name="user_email" required>
           </div>
         </div>
+
+        <div class="input_group">
+          <label for="subject">Assunto</label>
+          <div class="input_wrapper">
+            <img src="../imgs/icons/tag_icon.svg" alt="" class="icon">
+            <input type="text" id="subject" placeholder="Assunto" name="subject" required>
+          </div>
 
         <div class="input_group">
           <label for="contact_message">Mensagem</label>
           <div class="input_wrapper">
             <img src="../imgs/icons/message_icon.svg" alt="" class="icon">
-            <textarea id="contact_message" placeholder="Sua Mensagem"></textarea>
+            <textarea id="contact_message" placeholder="Sua Mensagem" name="message" required></textarea>
           </div>
         </div>
         <button type="submit" class="btn_gradient"><img src="../imgs/icons/send_icon.svg" alt="" class="icon"> Enviar mensagem</button>
@@ -246,8 +253,10 @@
     <footer class="footer">
         <p>© 2026 Philippe Dias. Todos os direitos reservados.</p>
     </footer>
-    <script src="../script/script.js"></script>
-     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="../script/form.js"></script>
+    <script src="../script/menu.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
