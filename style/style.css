@@ -56,6 +56,7 @@ ul {
 
 section {
   padding: 0 1rem;
+  scroll-margin-top: 7em;
 }
 
 [hidden] {
@@ -98,6 +99,11 @@ section {
   gap: 0.5rem;
   outline: 1px solid #9292925d;
   font-weight: bold;
+
+  .icon {
+    color: inherit;
+    font-size: 1rem;
+  }
 }
 
 .btn--transparent:hover {
@@ -111,6 +117,10 @@ section {
   text-transform: uppercase;
   font-weight: bold;
   gap: 0.5rem;
+  .icon {
+    color: inherit;
+    font-size: 1.2rem;
+  }
 }
 
 .emphasis:hover {
@@ -123,7 +133,37 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+}
+
+.btn_gradient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.825rem;
+  padding: 0.625rem 1rem;
+  background: #11359f;
+  background: radial-gradient(
+    circle,
+    rgba(17, 53, 159, 1) 0%,
+    rgba(13, 43, 156, 1) 24%,
+    rgba(10, 32, 153, 1) 49%,
+    rgba(19, 0, 52, 1) 94%
+  );
+  border-radius: 8px;
+  color: inherit;
+  outline: 1px solid #9292925d;
+  border: none;
+}
+
+.btn_gradient:hover {
+  outline-color: var(--secondary);
+  outline-width: 1px;
+  outline-offset: 4px;
+  color: var(--primary);
+}
+
+.text--transparent {
+  color: #c7c7c7b0;
 }
 
 /* ================= FLEX PATTERNS ================= */
@@ -256,10 +296,10 @@ body:has(#hamburguer:checked) .header {
   width: 0.9rem;
 }
 
-.icon {
+/* .icon {
   font-size: 1.8rem;
   color: var(--emphasis);
-}
+} */
 
 .hero .icon {
   padding: 0.6rem;
@@ -350,7 +390,7 @@ body:has(#hamburguer:checked) .header {
   border-radius: 12px;
 }
 
-.portfolio_card h2 {
+.project_title {
   font-size: 1.25rem;
 }
 
@@ -476,6 +516,11 @@ body:has(#hamburguer:checked) .header {
 .underline {
   border-bottom: 1px solid var(--secondary);
   font-weight: 900 !important;
+  transition: 0.5s;
+}
+
+.underline:hover {
+  border-color: var(--emphasis);
 }
 
 .contact .flex_container {
@@ -505,7 +550,7 @@ body:has(#hamburguer:checked) .header {
 
   input,
   textarea {
-  outline: 1px solid #9292925d;
+    outline: 1px solid #9292925d;
     border: none;
   }
 
@@ -544,26 +589,6 @@ body:has(#hamburguer:checked) .header {
   }
 }
 
-.btn_gradient {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.825rem;
-  padding: 0.625rem 1rem;
-  background: #11359f;
-  background: radial-gradient(
-    circle,
-    rgba(17, 53, 159, 1) 0%,
-    rgba(13, 43, 156, 1) 24%,
-    rgba(10, 32, 153, 1) 49%,
-    rgba(19, 0, 52, 1) 94%
-  );
-  border-radius: 8px;
-  color: inherit;
-  outline: 1px solid #9292925d;
-  border: none;
-}
-
 .contact_content-left {
   display: flex;
   flex-direction: column;
@@ -592,12 +617,39 @@ body:has(#hamburguer:checked) .header {
     font-size: 1.3rem;
   }
 
+  .project_title {
+    font-size: 1.8rem;
+  }
+
+  .portfolio_card p {
+    font-size: 1.3rem;
+  }
+
   .show_sm {
     display: none;
   }
 
   .show_lg {
     display: block;
+  }
+
+  .btn--transparent {
+    padding: 0.8rem 1.5rem;
+    .icon {
+      font-size: 1.7rem;
+      color: inherit;
+    }
+  }
+
+  .emphasis{
+    font-size: 1.4rem;
+    .icon{
+      font-size: 1.7rem;
+    }
+  }
+
+  .btn_gradient:hover{
+    outline-width: 2px;
   }
 
   .section_title {
