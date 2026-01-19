@@ -30,12 +30,14 @@ h3 {
   margin-top: var(--section-gap);
   h2 {
     color: var(--secondary);
+    margin-bottom: var(--content-gap);
   }
 
   .project_img {
     max-width: 100%;
     border-radius: 10px;
   }
+
   p {
     color: var(--secondary);
     line-height: 180%;
@@ -79,7 +81,7 @@ h3 {
 
 .tech_grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem 1rem;
 }
 
@@ -108,6 +110,13 @@ h3 {
   .project_section {
     gap: 2.5rem;
 
+    .project_content-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: var(--content-gap);
+    }
+
     .flex_container {
       gap: 2;
       justify-content: space-evenly;
@@ -128,6 +137,10 @@ h3 {
     flex-direction: column;
     gap: 0.5rem;
   }
+
+  .tech_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (min-width: 80rem) {
@@ -139,13 +152,10 @@ h3 {
     position: relative;
     flex-direction: row;
     align-items: start;
-  }
 
-  .project_content-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: var(--content-gap);
+    h2 {
+      margin-bottom: initial;
+    }
   }
 
   .project_content-right {
