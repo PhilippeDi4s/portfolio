@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Produtos com Carrinho</title>
+    <link rel="stylesheet" href="../style/projects.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+
+    <header class="header">
+      <a href="./home.html" class="header_name">Philippe Dias</a>
+
+      <input type="checkbox"  id="hamburguer" class="menu_toggle-input"></input>
+      <label for="hamburguer" class="menu_toggle-label"><ion-icon name="menu-outline"></ion-icon></label>
+    </header>
+
+    <nav id="header_menu" class="header_menu--mobile">
+      <ul id="menu_list" class="menu_list--mobile">
+        <li class="menu_list-item"><a href="./home.html#inicio">Início</a></li>
+        <li class="menu_list-item"><a href="./home.html#portfolio">Portfólio</a></li>
+        <li class="menu_list-item"><a href="./home.html#sobre-mim">Sobre Mim</a></li>
+        <li class="menu_list-item"><a href="./home.html#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <main class="main">
+        <nav class="breadcrumb">
+            <a class="btn--transparent" href="./home.html#portfolio"><ion-icon class="arrow_icon" name="arrow-forward-outline"></ion-icon> Voltar</a>
+            <span> <span class="text--transparent">Projetos ></span> Gerador de Tickect</span>
+        </nav>
+
+        <section class="project_section">
+            <div class="project_content-left">
+                <h2>Gerador de Tickect</h2>
+
+                <p class="show_sm"
+                >Gerador de ingressos com formulário validado em JavaScript, incluindo upload e preview de avatar, persistência de dados com localStorage e geração dinâmica do ticket por meio da manipulação do DOM, em uma interface responsiva e acessível. 
+                </p>
+                <p class="show_lg">
+                    Projeto de gerador de ingressos para conferência desenvolvido com HTML, CSS e JavaScript, com foco em validação de formulários, acessibilidade e manipulação do DOM. O sistema permite que o usuário preencha seus dados pessoais, faça upload de um avatar e receba feedback em tempo real durante a digitação, exibindo ou ocultando mensagens de erro conforme a validação dos campos.
+                </p>
+                <p class="show_lg">
+                    Projeto de gerador de ingressos para conferência desenvolvido com HTML, CSS e JavaScript, com foco em validação de formulários, acessibilidade e manipulação do DOM. O sistema permite que o usuário preencha seus dados pessoais, faça upload de um avatar e receba feedback em tempo real durante a digitação, exibindo ou ocultando mensagens de erro conforme a validação dos campos.
+                </p>
+                <p class="show_lg">
+                    Projeto de gerador de ingressos para conferência desenvolvido com HTML, CSS e JavaScript, com foco em validação de formulários, acessibilidade e manipulação do DOM. O sistema permite que o usuário preencha seus dados pessoais, faça upload de um avatar e receba feedback em tempo real durante a digitação, exibindo ou ocultando mensagens de erro conforme a validação dos campos.
+                </p>
+                    <div class="projects_info">
+                        <div class="btn--transparent">
+                            <ion-icon class="icon" name="code-slash-outline"></ion-icon>
+                            <div class="detail">
+                                <span>4</span>
+                                <span class="text--transparent">Tecnologias Usadas</span>
+                            </div>
+                        </div>
+    
+                        <div class="btn--transparent">
+                            <ion-icon class="icon" name="ribbon-outline"></ion-icon>
+                            <div class="detail">
+                                <span>Desafio</span>
+                                <span class="text--transparent">FrontEnd Mentor</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="project_content-right">
+                <picture>
+                    <source media="(min-width: 80rem)" srcset="../imgs/projects/tickect_generator.png">
+                    <img class="project_img" src="../imgs/projects/tickect_generator_sm.png" alt="Imagem do projeto">
+                </picture>   
+                <div class="flex_container">
+                    <a href="https://philippedi4s.github.io/conference-ticket-generator/pages/form.html" class="btn_gradient"><ion-icon class="arrow_icon icon" name="arrow-forward-outline"></ion-icon> Live Demo</a>
+                    <a href="https://github.com/PhilippeDi4s/conference-ticket-generator" class="btn_gradient"><ion-icon class="icon" name="logo-github"></ion-icon> GitHub</a>
+                </div>
+            </div>
+        </section>
+        <section class="tech">
+            <h3><ion-icon class="icon" name="code-outline"></ion-icon> Tecnologias Usadas</h3>
+    
+            <div class="tech_grid">
+                <span class="btn--transparent"><ion-icon class="icon" name="code-outline"></ion-icon> HTML</span>
+                <span class="btn--transparent"><ion-icon class="icon" name="code-outline"></ion-icon> CSS</span>
+                <span class="btn--transparent"><ion-icon class="icon" name="code-outline"></ion-icon> JavaScript</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Philippe Dias. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="../script/menu.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
