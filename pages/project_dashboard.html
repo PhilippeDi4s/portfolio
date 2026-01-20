@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Produtos com Carrinho</title>
+    <link rel="stylesheet" href="../style/projects.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+
+    <header class="header">
+      <a href="./home.html" class="header_name">Philippe Dias</a>
+
+      <input type="checkbox"  id="hamburguer" class="menu_toggle-input"></input>
+      <label for="hamburguer" class="menu_toggle-label"><ion-icon name="menu-outline"></ion-icon></label>
+    </header>
+
+    <nav id="header_menu" class="header_menu--mobile">
+      <ul id="menu_list" class="menu_list--mobile">
+        <li class="menu_list-item"><a href="./home.html#inicio">Início</a></li>
+        <li class="menu_list-item"><a href="./home.html#portfolio">Portfólio</a></li>
+        <li class="menu_list-item"><a href="./home.html#sobre-mim">Sobre Mim</a></li>
+        <li class="menu_list-item"><a href="./home.html#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <main class="main">
+        <nav class="breadcrumb">
+            <a class="btn--transparent" href="./home.html#portfolio"><ion-icon class="arrow_icon" name="arrow-forward-outline"></ion-icon> Voltar</a>
+            <span> <span class="text--transparent">Projetos ></span> Dashboard Interativo</span>
+        </nav>
+
+        <section class="project_section">
+            <div class="project_content-left">
+                <h2>Dashboard Interativo</h2>
+
+                <p class="show_sm">
+                    Dashboard interativo desenvolvido em Python, com uso de Pandas para análise de dados e Streamlit para criação de uma interface responsiva, incluindo filtros dinâmicos, KPIs e gráficos interativos que facilitam a exploração dos dados salariais na área de dados.                </p>
+                <p class="show_lg">
+                    Dashboard interativo de análise de salários na área de dados, desenvolvido inteiramente em Python, utilizando Pandas para carregamento, limpeza e filtragem do dataframe, Streamlit para construção da interface e Plotly para visualizações interativas. O projeto conta com filtros dinâmicos na barra lateral (ano, senioridade, tipo de contrato e tamanho da empresa), permitindo análises personalizadas em tempo real.
+                </p>
+                <p class="show_lg">
+                    O dashboard apresenta métricas principais (KPIs), como salário médio, salário máximo, total de registros e cargo mais frequente, além de gráficos interativos (ranking de cargos, distribuição salarial, proporção de trabalho remoto e mapa de salários por país). A aplicação foi construída com layout responsivo, organização em colunas e foco na exploração e interpretação dos dados.
+                </p>
+                    <div class="projects_info">
+                        <div class="btn--transparent">
+                            <ion-icon class="icon" name="code-slash-outline"></ion-icon>
+                            <div class="detail">
+                                <span>4</span>
+                                <span class="text--transparent">Tecnologias Usadas</span>
+                            </div>
+                        </div>
+    
+                        <div class="btn--transparent">
+                            <ion-icon class="icon" name="ribbon-outline"></ion-icon>
+                            <div class="detail">
+                                <span>Desafio</span>
+                                <span class="text--transparent">FrontEnd Mentor</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="project_content-right">
+                <picture>
+                    <source media="(min-width: 80rem)" srcset="../imgs/projects/tickect_generator.png">
+                    <img class="project_img" src="../imgs/projects/tickect_generator_sm.png" alt="Imagem do projeto">
+                </picture>                <div class="flex_container">
+                    <a href="https://dashboardinterativo-2025.streamlit.app/" class="btn_gradient"><ion-icon class="arrow_icon icon" name="arrow-forward-outline"></ion-icon> Live Demo</a>
+                    <a href="https://github.com/PhilippeDi4s/dashboard_interativo" class="btn_gradient"><ion-icon class="icon" name="logo-github"></ion-icon> GitHub</a>
+                </div>
+            </div>
+        </section>
+        <section class="tech">
+            <h3><ion-icon class="icon" name="code-outline"></ion-icon> Tecnologias Usadas</h3>
+    
+            <div class="tech_grid">
+                <span class="btn--transparent"><ion-icon class="icon" name="code-outline"></ion-icon> Python</span>
+                <span class="btn--transparent"><ion-icon class="icon" name="code-outline"></ion-icon> Pandas</span>
+                <span class="btn--transparent"><ion-icon class="icon" name="code-outline"></ion-icon> Streamlit</span>
+                <span class="btn--transparent"><ion-icon class="icon" name="code-outline"></ion-icon> Plotly</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Philippe Dias. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="../script/menu.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+h1,
+h2 {
+  text-align: center;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  color: var(--secondary);
+  gap: var(--content-gap);
+  padding: 0 1rem;
+  margin-bottom: var(--section-gap);
+
+  .arrow_icon {
+    transform: rotate(180deg);
+  }
+}
+
+.about_me-content {
+  margin-top: var(--content-gap);
+  display: flex;
+  flex-direction: column;
+  gap: var(--content-gap);
+
+  h2 {
+    font-size: 1.4rem;
+  }
+  p {
+    text-indent: 15px;
+    line-height: 180%;
+  }
+}
+
+.soft_skills-container {
+  h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+.soft_skills-list {
+  width: 100%;
+  padding: 0;
+  list-style: initial;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.soft_skills-item-container {
+  padding-left: 1rem;
+  li {
+    color: var(--secondary);
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+  }
+  p {
+    color: var(--primary);
+  }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 43.5rem) {
+  .breadcrumb {
+    padding: 1rem 4rem;
+  }
+
+  .about_me-content {
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      text-indent: 25px;
+    }
+  }
+
+  .soft_skills-container {
+    h1 {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .soft_skills-list {
+    gap: 2.5rem;
+  }
+
+  .soft_skills-item-container {
+    li {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 80rem) {
+  .breadcrumb {
+    padding: 1rem 6rem;
+  }
+
+  .about_me-content {
+    h2 {
+      font-size: 2.4rem;
+    }
+    p {
+      text-indent: 50px;
+      line-height: 200%;
+    }
+  }
+
+  .soft_skills-container {
+    h1 {
+      margin-bottom: 5rem;
+    }
+  }
+
+  .soft_skills-list {
+    gap: 4rem;
+  }
+}
