@@ -81,7 +81,7 @@
           <h2 class="project_title">Menu com Carrinho</h2>
           <p>Projeto de menu interativo com carrinho funcional, permitindo adicionar, remover e ajustar itens, confirmar pedidos via modal e navegar em uma interface responsiva e acessível.</p>
           <div class="flex_container">
-            <a href="https://philippedi4s.github.io/product-list-with-cart/" class="emphasis">Live demo <ion-icon class="arrow_icon icon" name="arrow-forward-outline"></ion-icon></a>
+            <a href="https://philippedi4s.github.io/product-list-with-cart/" target="_blank" class="emphasis">Live demo <ion-icon class="arrow_icon icon" name="arrow-forward-outline"></ion-icon></a>
             <a href="./project_cart.html" class="btn--transparent">Detalhes <ion-icon class="arrow_icon icon" name="arrow-forward-outline"></ion-icon></a>
           </div>
         </article>
@@ -94,7 +94,7 @@
           <h2 class="project_title">Gerador de Tickect</h2>
           <p>Gerador de ingressos para conferência com formulário acessível e responsivo, incluindo validações de campos, suporte a navegação por teclado, feedback para leitores de tela e geração do ingresso após o envio bem-sucedido.</p>
           <div class="flex_container">
-            <a href="https://philippedi4s.github.io/conference-ticket-generator/pages/form.html" class="emphasis">Live demo <ion-icon class="arrow_icon icon" name="arrow-forward-outline"></ion-icon></a>
+            <a href="https://philippedi4s.github.io/conference-ticket-generator/pages/form.html" target="_blank" class="emphasis">Live demo <ion-icon class="arrow_icon icon" name="arrow-forward-outline"></ion-icon></a>
             <a href="./project_tickect.html" class="btn--transparent">Detalhes <ion-icon class="arrow_icon icon" name="arrow-forward-outline"></ion-icon></a>
           </div>
         </article>
@@ -107,7 +107,7 @@
           <h2 class="project_title">Dashboard Interativo</h2>
           <p>Dashboard interativo desenvolvido em Python a partir de dados tratados, com foco em análise de dados, visualização clara e layout responsivo.</p>
           <div class="flex_container">
-            <a href="https://dashboardinterativo-2025.streamlit.app/" class="emphasis">Live demo <ion-icon class="arrow_icon icon" name="arrow-forward-outline"></ion-icon></a>
+            <a href="https://dashboardinterativo-2025.streamlit.app/" target="_blank" class="emphasis">Live demo <ion-icon class="arrow_icon icon" name="arrow-forward-outline"></ion-icon></a>
             <a href="./project_dashboard.html" class="btn--transparent">Detalhes <ion-icon class="arrow_icon icon" name="arrow-forward-outline"></ion-icon></a>
           </div>
         </article>
@@ -185,7 +185,7 @@
         </p>
         <div class="flex_container">
           <a href="./about-me.html" class="emphasis">Mais sobre mim</a>
-          <a href="#" class="emphasis">Meu currículo</a>
+          <a href="https://drive.google.com/file/d/1gNpcrwHDC1gVVBkna_UBIxM9F_hFS_c8/view?usp=drive_link" target="_blank" class="emphasis">Meu currículo</a>
         </div>
       </div>
     </section>
@@ -195,7 +195,7 @@
     <section id="contato" class="contact">
       <div class="contact_content-left">
         <h1 class="section_title">Vamos nos conectar!</h1>
-        <p>Diga olá para <span class="underline">lisboa.philippes@gmail.com</span> <br> Para mais informações, aqui está meu <a class="underline" href="#">currículo</a></p>
+        <p>Diga olá para <span class="underline">lisboa.philippes@gmail.com</span> <br> Para mais informações, aqui está meu <a class="underline" href="https://drive.google.com/file/d/1gNpcrwHDC1gVVBkna_UBIxM9F_hFS_c8/view?usp=drive_link" target="_blank">currículo</a></p>
         <div class="flex_container">
           <a
             href="https://www.linkedin.com/in/philippe-lisboa"
@@ -215,40 +215,95 @@
       </div>
 
       <form id="contact_form" class="contact_form" action="">
+
+        <div id="form_feedback-empty" class="form_feedback-background">
+          <div class="form_feedback">
+            <div class="form_feedback-header">
+              <button type="button" class="close-form_feedback"><ion-icon class="icon" name="close-outline"></ion-icon></button>
+            </div>
+            <div class="form_feedback-content">
+              <p>Por favor, preencha todas as informações no formulário.</p>
+              <button type="button" class="btn_gradient close-form_feedback"><img src="../imgs/icons/arrow.svg" class="icon" alt="ícone flecha"> Voltar</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="form_feedback-limit" class="form_feedback-background">
+          <div class="form_feedback">
+            <div class="form_feedback-header">
+              <button type="button" class="close-form_feedback"><ion-icon class="icon" name="close-outline"></ion-icon></button>
+            </div>
+            <div class="form_feedback-content">
+              <p>Você atingiu a quantida de e-mails do mês, aguarde <span id="days_left"></span> dias para enviar mais</p>
+              <button type="button" class="btn_gradient close-form_feedback"><img src="../imgs/icons/arrow.svg" class="icon" alt="ícone flecha"> Voltar</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="form_feedback-error" class="form_feedback-background">
+          <div class="form_feedback">
+            <div class="form_feedback-header">
+              <button type="button" class="close-form_feedback"><ion-icon class="icon" name="close-outline"></ion-icon></button>
+            </div>
+            <div class="form_feedback-content">
+              <p>Ocorreu algum erro ao enviar o email, tente novamente mais tarde.</p>
+              <button type="button" class="btn_gradient close-form_feedback"><img src="../imgs/icons/arrow.svg" class="icon" alt="ícone flecha"> Voltar</button>
+            </div>
+          </div>
+        </div>
+
         <h2>Entre em contato</h2>
 
         <div class="input_group">
           <label for="contact_name">Nome</label>
           <div class="input_wrapper">
-            <img src="../imgs/icons/user_icon.svg" alt="" class="icon">
+            <img src="../imgs/icons/user_icon.svg" alt="icon user" class="icon">
             <input type="text" id="contact_name" placeholder="Seu Nome" name="user_name" required>
+            <span id="contact_error-name" class="form_error-message">Nome inválido</span>
           </div>
         </div>
         
         <div class="input_group">
           <label for="contact_email">Email</label>
           <div class="input_wrapper">
-            <img src="../imgs/icons/email_icon.svg" alt="" class="icon">
+            <img src="../imgs/icons/email_icon.svg" alt="icon email" class="icon">
             <input type="email" id="contact_email" placeholder="Seu E-mail" name="user_email" required>
+             <span id="contact_error-email" class="form_error-message">Email Inválido</span>
           </div>
         </div>
 
         <div class="input_group">
           <label for="subject">Assunto</label>
           <div class="input_wrapper">
-            <img src="../imgs/icons/tag_icon.svg" alt="" class="icon">
+            <img src="../imgs/icons/tag_icon.svg" alt="icon assunto" class="icon">
             <input type="text" id="subject" placeholder="Assunto" name="subject" required>
+            <span id="contact_error-subject" class="form_error-message">Assunto inválido</span>          
           </div>
+        </div>
 
         <div class="input_group">
           <label for="contact_message">Mensagem</label>
           <div class="input_wrapper">
-            <img src="../imgs/icons/message_icon.svg" alt="" class="icon">
+            <img src="../imgs/icons/message_icon.svg" alt="icons mensagem" class="icon">
             <textarea id="contact_message" placeholder="Sua Mensagem" name="message" required></textarea>
+            <span id="contact_error-message" class="form_error-message">Mensagem inválida</span>
           </div>
         </div>
-        <button type="submit" class="btn_gradient"><img src="../imgs/icons/send_icon.svg" alt="" class="icon"> Enviar mensagem</button>
+
+        <button type="submit" class="btn_gradient"><img src="../imgs/icons/send_icon.svg" alt="icon enviar" class="icon"> Enviar mensagem</button>
+        
       </form>
+      <div id="form_feedback-send" class="form_feedback-background">
+          <div class="form_feedback">
+            <div class="form_feedback-header">
+              <button type="button" class="close-form_feedback"><ion-icon class="icon" name="close-outline"></ion-icon></button>
+            </div>
+            <div class="form_feedback-content">
+              <p>E-mail enviado com sucesso! Entrarei em contato o mais breve possível.</p>
+              <button type="button" class="btn_gradient close-form_feedback"><img src="../imgs/icons/arrow.svg" class="icon" alt="ícone flecha"> Voltar</button>
+            </div>
+          </div>
+        </div>
     </section>
     <footer class="footer">
         <p>© 2026 Philippe Dias. Todos os direitos reservados.</p>
