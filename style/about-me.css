@@ -58,6 +58,53 @@ h2 {
   }
 }
 
+.contact_links {
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--content-gap);
+  flex-direction: column;
+
+.icon {
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #30343f;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon:hover {
+  background-color: var(--emphasis);
+  color: var(--primary);
+}
+
+  .btn--blue {
+    gap: 1rem;
+    transition: all 0.4s;
+  }
+
+  .btn--blue:hover {
+    color: var(--emphasis);
+    background-color: rgba(221, 221, 221, 0.07);
+  }
+
+  .btn--blue .icon {
+    transform: rotate(-30deg);
+    color: black;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .btn--blue:hover .icon {
+    color: var(--emphasis);
+  }
+
+  .flex_container{
+    gap: 6rem;
+  }
+}
+
 /* ================= TABLET ================= */
 @media (min-width: 43.5rem) {
   .breadcrumb {
@@ -70,6 +117,14 @@ h2 {
     }
     p {
       text-indent: 25px;
+    }
+  }
+
+  .contact_links{
+    flex-direction: row;
+
+    .flex_container{
+      gap: 1.5rem;
     }
   }
 

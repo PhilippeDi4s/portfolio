@@ -290,7 +290,7 @@ body:has(#hamburguer:checked) .header {
   }
 }
 
-.contact_links span {
+.btn--blue {
   background: var(--emphasis);
   color: var(--background);
   padding: 0.9rem 1rem;
@@ -303,13 +303,13 @@ body:has(#hamburguer:checked) .header {
   font-size: 0.9rem;
 }
 
-.contact_links .arrow_icon {
+.btn--blue .arrow_icon {
   font-size: 1.5rem;
   transform: rotate(-90deg) scale(0.5);
-  transition: transform 0.4s ease;
+  transition: all 0.4s ease-in-out;
 }
 
-.contact_links span:hover .arrow_icon {
+.btn--blue:hover .arrow_icon {
   opacity: 1;
   transform: rotate(0deg) scale(1);
 }
