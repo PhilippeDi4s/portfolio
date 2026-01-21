@@ -64,14 +64,17 @@
 
     <div class="section-divider"></div>
 
-    <section id="portfolio" class="projects">
-      <h1 class="section_title">Projetos Desenvolvidos</h1>
-      <div class="portfolio_switcher" hidden>
-        <button class="hidden">Portfólio <img src="../imgs/icons/code_icon.svg"></button>
-        <button class="hidden">Certificados <img src="../imgs/icons/medal_icon.svg"></button>
-        <button class="hidden">Stack Tecnológica <img src="../imgs/icons/book_icon.svg"></button>
+    <div class="portfolio_header">
+      <h1 id="portfolio_title" class="section_title"></h1>
+      <div class="portfolio_switcher" >
+        <button id="portfolio_btn" class="btn_gradient">Portfólio <ion-icon class="icon" name="code-slash-outline"></ion-icon></button>
+        <button id="certificate_btn" class="btn_gradient disabled">Certificados <ion-icon class="icon" name="ribbon-outline"></ion-icon></button>
+        <button id="stack_btn" class="btn_gradient disabled">Stack Tecnológica <ion-icon class="icon" name="book-outline"></ion-icon></button>
       </div>
+    </div>
 
+    <section id="portfolio" class="projects">
+      <h1 class="section_title hide_title_for_switch">Projetos desenvolvidos</h1>
       <div class="projects_grid">
         <article class="portfolio_card">
           <picture>
@@ -115,8 +118,8 @@
       </div>
     </section>
 
-    <section class="certificates">
-      <h1 class="section_title">Certificados</h1>
+    <section id="certificates" class="certificates">
+      <h1 class="section_title hide_title_for_switch">Certificados</h1>
       <div class="projects_grid">
         <article class="portfolio_card certificate--hover">
           <img src="../imgs/certificates/certificado-1.png" alt="Certificado de Análise de dados com Python">
@@ -130,8 +133,8 @@
       </div>
     </section>
 
-    <section class="stack">
-      <h1 class="section_title">Stack Tecnológica</h1>
+    <section id="stack" class="stack">
+      <h1 class="section_title hide_title_for_switch">Stack Tecnológica</h1>
       <div class="stack_grid">
         <article class="stack_card stack--hover">
           <img src="../imgs/icons/html_icon.svg" alt="Ícone HTML">
@@ -314,6 +317,7 @@
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="../script/form.js"></script>
     <script src="../script/menu.js"></script>
+    <script src="../script/portfolio_switcher.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>

@@ -10,18 +10,26 @@
 }
 
 /* ================= GLOBAL ================= */
+html,
+body {
+  min-height: 100%;
+}
+
 body {
   font-family: var(--text-font);
   background: #011140;
-  min-height: 100vh;
   position: relative;
 }
 
 body::before {
   content: "";
-  position: fixed;
-  inset: 0;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: -1;
+
   background: radial-gradient(
     circle,
     rgba(1, 17, 64, 1) 0%,
@@ -30,7 +38,12 @@ body::before {
 }
 
 p,
-a {
+a,
+.btn--blue,
+.btn--transparent,
+.btn_gradient,
+label,
+input {
   font-size: 1rem;
 }
 
@@ -111,7 +124,7 @@ section {
   color: var(--secondary);
 }
 
-.btn--transparent:focus{
+.btn--transparent:focus {
   outline-offset: 4px;
   outline-color: var(--secondary);
 }
@@ -162,9 +175,12 @@ section {
   color: inherit;
   outline: 1px solid #9292925d;
   border: none;
+  color: var(--secondary);
+  transform: all 0.5s;
 }
 
-.btn_gradient:hover, .btn_gradient:focus {
+.btn_gradient:hover,
+.btn_gradient:focus {
   outline-color: var(--secondary);
   outline-width: 1px;
   outline-offset: 4px;
@@ -175,8 +191,12 @@ section {
   color: #c7c7c7b0;
 }
 
-.disabled{
-  background: #92929270;
+.disabled {
+  background: transparent;
+}
+
+.selected {
+  outline: 1px solid var(--secondary);
 }
 
 /* ================= FLEX PATTERNS ================= */
@@ -184,6 +204,7 @@ section {
 .hero_content,
 .hero_content-left,
 .projects,
+.portfolio_header,
 .portfolio_card,
 .certificates,
 .stack,
@@ -350,6 +371,30 @@ body:has(#hamburguer:checked) .header {
   transform: rotateY(18deg) rotateX(6deg);
 }
 
+/* ================= PORTFOLIO ================= */
+.portfolio_header {
+  margin-bottom: var(--section-gap);
+
+  .section_title{
+    text-align: center;
+  }
+}
+
+.portfolio_switcher {
+  display: grid;
+  grid-template-columns: 70%;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+
+  .btn_gradient {
+    padding: 1rem 1.5rem;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+}
 /* ================= PROJECTS ================= */
 .projects,
 .certificates {
@@ -663,7 +708,7 @@ textarea:-webkit-autofill {
 .form_feedback-content {
   text-align: center;
 
-  p{
+  p {
     color: var(--secondary);
   }
 
@@ -685,12 +730,37 @@ textarea:-webkit-autofill {
   :root {
     --section-gap: 5rem;
   }
+
+  body {
+    font-family: var(--text-font);
+    background: #011140;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(
+      circle,
+      rgba(1, 17, 64, 1) 0%,
+      rgba(0, 2, 13, 1) 100%
+    );
+  }
+
   section {
     padding: 0 4rem;
   }
 
   p,
-  a {
+  a,
+  .btn--blue,
+  .btn--transparent,
+  .btn_gradient,
+  label,
+  input {
     font-size: 1.3rem;
   }
 
@@ -754,6 +824,19 @@ textarea:-webkit-autofill {
     padding: 0;
   }
 
+  .portfolio_switcher {
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+
+    .btn_gradient {
+      padding: 1.4rem 1.5rem;
+    }
+
+    .icon {
+      font-size: 1.8rem;
+    }
+  }
+
   .certificate--hover:hover img {
     transform: scale(1.1);
   }
@@ -801,6 +884,20 @@ textarea:-webkit-autofill {
     align-self: stretch;
     justify-self: stretch;
     width: initial;
+  }
+
+  .portfolio_switcher {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+
+    .btn_gradient {
+      padding: 1.8rem 1.5rem;
+    }
+
+    .icon {
+      font-size: 2.1rem;
+    }
   }
 
   .projects {
