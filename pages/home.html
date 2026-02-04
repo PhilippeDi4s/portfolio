@@ -32,6 +32,7 @@
       </ul>
     </nav>
 
+
     <section id="inicio" class="hero">
       <article class="hero_content">
         <div class="hero_content-left">
@@ -75,21 +76,35 @@
 
     
     <section class="portfolio">
-      <section class="portfolio_header" hidden>
+      <div class="portfolio_header" hidden>
         <h1 id="portfolio_title" class="section_title"></h1>
         <div class="portfolio_switcher" >
           <button id="portfolio_btn" class="btn_gradient">Portfólio <ion-icon class="icon" name="code-slash-outline"></ion-icon></button>
           <button id="certificate_btn" class="btn_gradient disabled">Certificados <ion-icon class="icon" name="ribbon-outline"></ion-icon></button>
           <button id="stack_btn" class="btn_gradient disabled">Stack Tecnológica <ion-icon class="icon" name="book-outline"></ion-icon></button>
         </div>
-      </section>
+      </div>
+
       <section id="portfolio" class="projects">
         <h1 class="section_title hide_title_for_switch">Projetos desenvolvidos</h1>
         <div class="projects_grid">
           <article class="portfolio_card">
             <picture>
+              <source media="(min-width: 80rem)" srcset="../imgs/projects/chronos_pomodoro.png">
+              <img src="../imgs/projects/chronos_pomodoro.png" alt="Imagem do projeto">
+            </picture>
+            <h2 class="project_title">Chronos Pomodoro</h2>
+            <p>Aplicação SPA de cronômetro Pomodoro feita com React e Vite, com ciclos de foco/descanso, histórico de tarefas, temas personalizáveis, notificações com React Toastify e contagem precisa via Web Worker.</p>
+            <div class="flex_container">
+              <a href="https://chronos-pomodoro-amber.vercel.app/" target="_blank" class="emphasis">Live demo <ion-icon class="arrow_icon icon" name="arrow-forward-outline"></ion-icon></a>
+              <a href="./project_chronos.html" class="btn--transparent">Detalhes <ion-icon class="arrow_icon icon" name="arrow-forward-outline"></ion-icon></a>
+            </div>
+          </article>
+
+          <article class="portfolio_card">
+            <picture>
               <source media="(min-width: 80rem)" srcset="../imgs/projects/menu_cart.png">
-              <img src="../imgs/projects/teste.png" alt="Imagem do projeto">
+              <img src="../imgs/projects/menu_cart_sm.png" alt="Imagem do projeto">
             </picture>
             <h2 class="project_title">Menu com Carrinho</h2>
             <p>Projeto de menu interativo com carrinho funcional, permitindo adicionar, remover e ajustar itens, confirmar pedidos via modal e navegar em uma interface responsiva e acessível.</p>
@@ -159,11 +174,19 @@
             <p>JavaScript</span></p>
           </article>
           <article class="stack_card stack--hover">
-            <img src="../imgs/icons/bootstrap_icon.svg" alt="Ícone bootstrap">
-            <p>Bootstrap</span></p>
+            <img class="smaller_img" src="../imgs/icons/vite_icon.png" alt="Ícone Vite">
+            <p>Vite</span></p>
           </article>
           <article class="stack_card stack--hover">
-            <img id="small_img" src="../imgs/icons/php_icon.svg" alt="Ícone php">
+            <img src="../imgs/icons/react_icon.svg" alt="Ícone React">
+            <p>React</span></p>
+          </article>
+          <article class="stack_card stack--hover">
+            <img src="../imgs/icons/typescript_icon.svg" alt="Ícone TypeScript">
+            <p>TypeScript</span></p>
+          </article>
+          <article class="stack_card stack--hover">
+            <img class="small_img" src="../imgs/icons/php_icon.svg" alt="Ícone php">
             <p><span class="uppercase">php</span></p>
           </article>
           <article class="stack_card stack--hover">
@@ -171,7 +194,7 @@
             <p>Python</p>
           </article>
           <article class="stack_card stack--hover">
-            <img id="small_img" src="../imgs/icons/sql_icon.svg" alt="Ícone mysql">
+            <img class="small_img" src="../imgs/icons/sql_icon.svg" alt="Ícone mysql">
             <p>MySQL</p>
           </article>
           <article class="stack_card stack--hover">
