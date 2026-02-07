@@ -383,6 +383,8 @@ body:has(#hamburguer:checked) .header {
 .profile_picture {
   width: 90%;
   max-width: 35rem;
+  max-height: 35rem;
+  object-fit: cover;
   margin: 0 auto;
   border-radius: 30px;
   transition: all 0.6s ease;
@@ -937,7 +939,7 @@ textarea:-webkit-autofill {
 /* ================= DESKTOP ================= */
 @media (min-width: 80rem) {
   section {
-    padding: 0;
+    padding: 0 6rem;
   }
 
   .header {
